@@ -1,0 +1,37 @@
+Sub CreatePageCountsChart()
+    Dim ws As Worksheet
+    Dim chartObj As ChartObject
+    Dim chartRange As Range
+
+    ' Set the worksheet where your data is located
+    Set ws = ThisWorkbook.Sheets("Sheet1") ' Change "Sheet1" to your sheet's name
+
+    ' Define the data range (assuming page names are in column A and counts in column B)
+    Set chartRange = ws.Range("A1:B6") ' Adjust the range as needed
+
+    ' Create a new chart object on the worksheet
+    Set chartObj = ws.Shapes.AddChart2(251, xlColumnClustered)
+
+    ' Set the source data for the chart
+    chartObj.Chart.SetSourceData Source:=chartRange
+
+    ' Customize the chart title
+    chartObj.Chart.HasTitle = True
+    chartObj.Chart.ChartTitle.Text = "Page Counts"
+
+    ' Customize the axis labels
+    chartObj.Chart.Axes(xlCategory, xlPrimary).HasTitle = True
+    chartObj.Chart.Axes(xlCategory, xlPrimary).AxisTitle.Text = "Page"
+    chartObj.Chart.Axes(xlValue, xlPrimary).HasTitle = True
+    chartObj.Chart.Axes(xlValue, xlPrimary).AxisTitle.Text = "Count"
+
+    ' Adjust chart size and position
+    chartObj.Top = ws.Cells(1, 4).Top ' Adjust the top and left properties as needed
+    chartObj.Left = ws.Cells(1, 4).Left
+    chartObj.Height = 300 ' Adjust the height and width as needed
+    chartObj.Width = 400
+
+    ' Activate the chart
+    chartObj.Activate
+
+End Sub
