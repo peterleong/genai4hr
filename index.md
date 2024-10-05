@@ -4,8 +4,8 @@
 
 # Topic 1
 Useful links that we will be using
-* Bard - https://bard.google.com
-* Bing - https://www.bing.com/chat
+* Bard/Gemini - https://gemini.google.com
+* Bing/Copilot - https://www.bing.com/chat or https://copilot.microsoft.com
 * ChatGPT - https://chat.openai.com
 
 Examples of Generative AI
