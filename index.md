@@ -153,7 +153,7 @@ Helpful links on presentation prompts
 * https://www.howtogeek.com/903771/how-to-plan-and-create-a-powerpoint-presentation-with-chatgpt-and-midjourney/
 
 ---
-# Topic 6
+# Topic 4
 
 
 ## Learning & Development with AI
