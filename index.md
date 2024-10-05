@@ -17,6 +17,7 @@ Examples of Generative AI
 
 
 Links from slides
+* Generative AI Playground - https://copilot.microsoft.com/images/create
 * Crowdsourced List of LLMs - https://bit.ly/UsefulLLMs
 * HDB chatbot - https://www.hdb.gov.sg/
 * Timeline - https://voicebot.ai/large-language-models-history-timeline/
